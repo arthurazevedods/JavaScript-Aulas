@@ -9,7 +9,7 @@ comparados e trocados, se necessário, até que todo o vetor
 esteja ordenado.
 */
 const livros = require('./listaLivros.json');
-const menorValor = require('./01-menorValor');
+const menorValor = require('./01-menorValor.js');
 console.log(livros);
 
 function selectionSort(vetor,valor){

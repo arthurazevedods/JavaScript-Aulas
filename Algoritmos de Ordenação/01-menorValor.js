@@ -2,7 +2,7 @@ const livros = require('./listaLivros.json');
 
 function menorValor(vetor,valor,posInicial){
     let menor = posInicial;
-    for (let atual = 0; atual < vetor.length; atual++) {
+    for (let atual = posInicial; atual < vetor.length; atual++) {
         if (vetor[atual][valor] < vetor[menor][valor]) {
             menor = atual
         }
