@@ -1,3 +1,11 @@
+let vetor = ["Picanha","Costela","Batata Frita"];
+
+console.log(vetor);
+
+console.log(vetor[1]);
+
+
+
 /**
  
 concat()
