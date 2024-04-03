@@ -2,7 +2,7 @@ var idadeItalo = 16;
 let idadeIngrid = 17;
 const idadeArthur = 23;
 
-console.log(idadeItalo);
+console.log(idadeItalo);//imprimir uma mensagem
 console.log(idadeIngrid);
 console.log(idadeArthur);
 
