@@ -1,12 +1,6 @@
 const alunos = [
-    'arthur',
-    'taynara',
-    'ellen',
-    'martins',
-    'azevedo',
-    'silva',
-    'sousa',
-    'souza'
+    'ingrid',
+    'bruna'
 ]
 
 const sala1 = alunos.slice(0,alunos.length/2); 

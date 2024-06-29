@@ -1,8 +1,10 @@
 let vetor = ["Picanha","Costela","Batata Frita"];
-
-console.log(vetor);
-
-console.log(vetor[1]);
+console.log(vetor);//saída no console
+console.log(vetor[0]);
+console.log(vetor[2]);
+vetor.push("Salada","Coca-cola zero");//Adiciona um elemento no final do vetor
+console.log(vetor);//saída no console
+console.log(vetor[3]);
 
 
 

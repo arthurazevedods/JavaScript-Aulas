@@ -1,16 +1,17 @@
-const alunosA = [
-    'arthur',
-    'taynara',
-    'ellen',
+const equipeA = [
+    'emanuel',
+    'ingrid',
+    'lawan',
 ]
-const alunosB = [
-    'martins',
-    'azevedo',
-    'silva',
-    'sousa',
-    'souza'
+const equipeB = [
+    'ingryd',
+    'luís augusto',
+    'geovana',
+    'aline',
+    'leandra'
 ]
 
-const unificada = alunosA.concat(alunosB);
+const unificada = equipeA.concat(equipeB);
 
-console.log(unificada);
+console.log(unificada.length);
+
