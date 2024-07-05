@@ -37,7 +37,7 @@ class CircularLinkedList {
     } else {
       this.tail.next = newNode;
       newNode.next = this.head;
-      this.tail = newNode
+      this.tail = newNode;
     }
   }
 
@@ -52,7 +52,27 @@ class CircularLinkedList {
       this.head = this.head.next;
     }
   }
-
+  removeLast(){
+    if(this.tail === null){
+      return;
+    }else if(this.tail.next === this.tail){
+      this.head = null;
+      this.tail = null;
+    }else{
+      let current = this.head;
+      let prev = null;
+      while (current.next != this.head){
+        if(current.next === this.tail){
+          prev = current;
+        }
+        current = current.next
+      }
+      if(prev){
+        prev.next = this.head;
+        this.tail = prev;
+      }
+    }
+  }
   removeNode(rmNode) {
     if (this.head === null) {
       console.log("A lista está vazia!");
@@ -102,11 +122,11 @@ class CircularLinkedList {
 const lista = new CircularLinkedList();
 lista.insertFirst(12);
 lista.insertFirst(13);
-lista.insertFirst(16);
-lista.printList()//16 13 12 
+lista.insertLast(16);
+lista.printList()//13 12 16
 lista.removeFirst();
-lista.printList();//13 12
-lista.removeFirst();
+lista.printList();//12 16
+lista.removeLast();
 lista.printList();//12
 lista.removeNode(12);
 
@@ -114,5 +134,11 @@ lista.insertFirst(22);
 lista.insertFirst(35);
 lista.insertLast(100);
 lista.insertFirst(100);
+lista.printList();//100 35 22 100
 lista.removeNode(100);
+lista.printList();//35 22 100
+lista.removeLast();
+lista.printList();// 35 22
+lista.removeLast();
+lista.removeLast();
 lista.printList();

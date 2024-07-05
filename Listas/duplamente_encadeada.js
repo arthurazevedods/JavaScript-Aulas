@@ -132,7 +132,7 @@ const list = new DoublyLinkedList();
 
 list.insertFirst(10);
 list.insertFirst(20);
-list.insertFirst(30);
+list.insertLast(30);
 
 console.log('Lista:');
 list.printListForward(); 
