@@ -8,7 +8,6 @@ ordenado. O processo continua até que todos os elementos estejam
 ordenados. É um algoritmo eficiente para pequenos conjuntos de dados.
 */
 const livros = require('./listaLivros.json');
-console.log(livros);
 
 function insertionSort(vetor,valor) {
 
@@ -24,5 +23,5 @@ function insertionSort(vetor,valor) {
     return vetor;
 }
 
-console.log('\n');
-console.log(insertionSort(livros,'preco '));
+
+module.exports = insertionSort;
